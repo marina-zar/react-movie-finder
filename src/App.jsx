@@ -41,7 +41,6 @@ function App() {
       } catch (err) {
         setError(err.message);
         setMovies([]);
-        
       } finally {
         setIsLoading(false);
       }
@@ -52,7 +51,7 @@ function App() {
 
   return (
     <div className="container">
-      <h2>Пошук фільмів по запиту</h2>
+      <h2>Пошук фільмів по запиту юзера</h2>
       <SearchBar onSearch={setQuery} />
       <MovieList movies={movies} isLoading={isLoading} error={error} />
     </div>
