@@ -1,0 +1,22 @@
+.card{
+    width: 340px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #747171;
+    box-sizing: border-box;
+}
+
+.pic{
+    height: 400px;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.noPoster{
+    height: 400px;
+    width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+}
