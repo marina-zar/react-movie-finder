@@ -8,13 +8,16 @@ function App() {
   const [error, setError] = useState(null);
   const [query, setQuery] = useState('batman');
 
+  const API_KEY = import.meta.env.VITE_OMDB_API_KEY;
+  console.log('API KEY:', import.meta.env.VITE_OMDB_API_KEY);
+
   useEffect(() => {
     async function fetchMovies() {
       try {
         setIsLoading(true);
 
         const response = await fetch(
-          `https://www.omdbapi.com/?s=${query}&apikey=${process.env.KEY}`
+          `https://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`
         );
 
         if (!response.ok) {
